@@ -1,0 +1,8 @@
+for testing on the postman 
+
+{
+    "name": "yo bas2",
+    "email": "misss@gmail.com",
+    "description": "hi",
+    "paymentId": "77822283"
+}

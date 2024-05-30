@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Step Banking</title>
+    <link rel="stylesheet" href="files/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Door Step Banking</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Door Step Banking</h2>
+            <p>Enjoy the convenience of banking services at your doorstep.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Account Opening</h3>
+                <p>Open a new bank account from the comfort of your home.</p>
+            </div>
+            <div class="service">
+                <h3>Deposit & Withdrawal</h3>
+                <p>Deposit or withdraw money without visiting a bank branch.</p>
+            </div>
+            <div class="service">
+                <h3>Loan Services</h3>
+                <p>Apply for loans and get assistance with loan-related queries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to providing convenient banking services to our customers. With our door step banking service, you can manage your banking needs without leaving your home.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to contact us.</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+            <div id="paymentForm" style="display:none;">
+                <h3>Make Payment 100 rupees</h3>
+                <!-- Display QR code for UPI ID -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=mickelbasha1234%40oksbi&amp;size=150x150" alt="QR Code">
+            
+                <!-- Input box for UPI transaction ID -->
+                <input type="text" id="transactionId" placeholder="Enter UPI Transaction ID" required>
+            
+                <!-- Button to mark as paid -->
+                <button type="button" id="markPaidBtn" onclick="markAsPaid()">Mark as Paid</button>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Door Step Banking. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
+    <script src="files/script.js"></script>
+</body>
+</html>
